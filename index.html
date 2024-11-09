@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="css/diseno.css" rel="stylesheet" type="text/css">
+    <title>Inicio de Sesion</title>
+</head>
+<body>
+    <div class="card-container">
+      <div class="letras1">
+        <a style="color: white;font-size: 45px;"> Oscar Greco Saavedra Lagunas</a>
+      </div>
+      <div class="letras2">
+        <a style="color: white;font-size: 30px;">Proyecto de Nivelacion</a>
+      </div>
+         <div class="card">
+            <form action="" name="login">
+            <table align="center" >
+               <tr>
+                  <td colspan="2" align="center" class="ini"><b>INICIO DE SESIÓN</b></td>
+               </tr>
+      
+                <tr>
+                   <td><label for="">Matricula</label><br><input type="text" id="usuario" class="in" name="usuario" placeholder="Escribe tu Matricula" maxlength="30" ></td> 
+                </tr>
+                <tr>
+                   <td><label for="">Contraseña</label><br><input type="password" id="password" class="in" name="contra" placeholder="Escribe tu Contraseña" maxlength="30"></td> 
+                </tr>
+                <tr>
+                   <td colspan="2" style="text-align: center;"><input type="button" value="Iniciar sesión" class="btn" onclick="iniciar()"></td>
+                   <!--<td>2</td> -->
+                </tr>
+            </table>
+            </form>
+
+            <script language="JavaScript">
+               function iniciar(){ 
+    var done=0;
+   var usu=document.login.usuario.value; 
+    var con=document.login.contra.value;
+    
+
+    if (usu=="123456" && con=="profepini") { 
+    window.location.href="principal.html"; 
+    } 
+    if (usu=="123456" && con=="profepini") { 
+    window.location.href="principal.html"; 
+    } 
+    if (usu=="" && con=="") { 
+    alert("El usuario o la contraseña son incorrecto intentalo de nuevo"); 
+    } 
+    } 
+            </script>
+
+         </div>
+    </div>
+</body>
+</html>
