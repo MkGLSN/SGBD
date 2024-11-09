@@ -1,0 +1,118 @@
+@font-face{
+	font-family: fuenteRandom;
+	src: url("Outfit-Regular.ttf");
+}
+
+*{
+	font-family: fuenteRandom;
+}
+
+body{
+	background-image: linear-gradient(135deg,
+    #2c08a1, #e00f0f, #000000, #06ff65
+	);
+	background-size: 4000%;
+	animation: fanimado 10s infinite;
+}
+
+.header{
+  text-align: center;
+  font-size: 25px;
+  margin-top: -8px;
+  margin-left: -8px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 15px;
+  border-bottom:1px rgba(255, 255, 255, 0.39) solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fondo{
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid #fafafa10;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.37);
+}
+
+.con{
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 1.0);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.37);
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+  overflow: hidden;
+  display: inline;
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.con .hide{
+ opacity: 0;
+ visibility: hidden;
+ transition: all 500ms ease-out;
+ text-decoration: none;
+}
+
+.con:hover{
+	transform: scale(1.1);
+	transition: 0.25s;
+}
+
+.con:hover > .hide{
+	opacity: 1;
+	visibility: visible;
+	transition: all 500ms ease-out;
+  text-decoration: none;
+}
+
+.letras1{
+	margin: 0px;
+	text-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.letras2{
+	margin: 0px;
+	text-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+@keyframes fanimado{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+@media (max-width:1300px){
+  .header{
+    flex-direction: column;
+    align-items: center;
+  }
+}

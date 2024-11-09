@@ -1,0 +1,115 @@
+@font-face{
+	font-family: fuenteRandom;
+	src: url("Outfit-Regular.ttf");
+}
+
+*{
+	font-family: fuenteRandom;
+}
+
+body{
+	background-image: linear-gradient(135deg,
+    #1000a5, rgb(250, 1, 1), #000000, #00ff62
+	);
+	background-size: 5000%;
+	animation: fanimado 10s infinite;
+}
+
+
+.card-container{
+	text-align: center;
+  margin: 50px auto;
+  position: relative;
+	font-size: 28px;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #fafafa10;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card{
+	text-align: left;
+	font-size: 25px;
+	width: 50%;
+	border: 2px solid #fafafa10;
+	left: 6px;
+	top: 50px;
+	background: linear-gradient(rgba(239, 235, 235, .25), rgba(239, 235, 235, .25));
+	margin: auto;
+	border-radius: 10px;
+	padding: 20px;
+}
+.in{
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px rgb(255, 255, 255) solid;
+}
+label{
+	margin: 1px;
+	font-size: 1.4rem;
+color: rgb(255, 255, 255);
+}
+
+.ini{
+	padding: 15px;
+}
+td{
+	padding-top: 20px;
+}
+.btn{
+	margin-top: 15px;
+	padding: 10px;
+	width: 50%;
+	border: 1px white solid;
+	border-radius: 5px;
+}
+.btn:hover{
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	background-color: aliceblue;
+}
+b{
+	letter-spacing: 6px;
+	font-size: 2rem;
+	color: aliceblue;
+}
+.usuario{
+  border: 2px solid #fafafa10;
+}
+
+
+.letras1{
+	margin: 10px;
+	text-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.letras2{
+	margin: 10px;
+	text-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.letras3{
+	margin: 10px;
+	text-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+a{
+	text-decoration: none;
+}
+
+@keyframes fanimado{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
